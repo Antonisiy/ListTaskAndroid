@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ListTask</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_todo">Создать</string>
+    <string name="action_back">Назад</string>
+    <string name="Tasks">Задачи</string>
+    <string name="Task">Задача</string>
+    <string name="NewTask">Новая задача</string>
+    <string name="Projects">Категории</string>
+    <string name="Project">Категория</string>
+    <string name="kIndexRequest">http://damp-falls-51925.herokuapp.com/projects.json</string>
+</resources>
