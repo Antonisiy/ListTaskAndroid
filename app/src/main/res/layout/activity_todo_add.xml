@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".TodoAddActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="gravity"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/accentColor"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="@string/NewTask"
+                android:textAlignment="center"
+                android:textColor="@color/systemWhiteColor"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textTitleTodo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#f0f0f0"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/Task"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/systemBlackColor"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/custom_text_view"
+        android:textCursorDrawable = "@null"
+        android:hint="Название задачи..."
+        android:paddingLeft="10dp"
+        android:stateListAnimator="@null" />
+
+    <TextView
+        android:id="@+id/textSeparator"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFF0F0F0"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/Project"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/systemBlackColor"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+            <ListView
+                android:choiceMode="singleChoice"
+                android:id="@+id/ProjectList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+
+    </LinearLayout>
